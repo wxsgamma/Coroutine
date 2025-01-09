@@ -4,5 +4,7 @@
 
 
 namespace Zeus{
-
+    Thread::Thread(std::function<void()> cb,const std::string name){
+        
+    }
 }
