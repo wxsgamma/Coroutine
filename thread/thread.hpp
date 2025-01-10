@@ -43,7 +43,7 @@ namespace Zeus{
             const std::string &getname() const {return m_name;};
             void join();
             
-            static pid_t Get_thread_it();
+            static pid_t Get_thread_id();
             static Thread* Getthis();
             static const std::string& Getname();
             static void setname(const std::string& name);
