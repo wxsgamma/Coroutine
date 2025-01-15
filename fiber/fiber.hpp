@@ -22,7 +22,7 @@ class Fiber : public std::enable_shared_from_this<Fiber>{
         enum state{
             READY,
             RUNNING,
-            TERN
+            TERM
         };
     private:
         Fiber();
@@ -44,7 +44,7 @@ class Fiber : public std::enable_shared_from_this<Fiber>{
 
     private:
         uint64_t m_id=0;//Id
-        uint32_t stacksize=0;
+        uint32_t m_stacksize=0;
         state m_state=READY;
         ucontext_t m_ctx;
         void* m_stack=nullptr;
